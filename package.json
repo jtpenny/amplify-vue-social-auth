@@ -1,6 +1,6 @@
 {
   "name": "amplify-vue-social-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Federated Sign in for AWS Amplify Vue applications",
   "main": "index.js",
   "dependencies": {
@@ -14,10 +14,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "github:jtpenny/amplify-vue-social-auth",
   "keywords": [
     "AWS",
     "Amplify",
     "vue",
+    "Authentication",
+    "Federation",
+    "Login",
     "Google",
     "Facebook"
   ],

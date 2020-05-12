@@ -1,8 +1,8 @@
 This repo extends https://github.com/aws-samples/aws-amplify-vue and adds the ability to sign in with Federated providers including Google and Facebook.
 
-# The first step is to install the amplify vue application and configure authentication. You can configure federation from the amplify CLI or through the AWS console. 
-# Next, run npm install amplify-vue-social-auth
-# The next step is to update the aws-exports.js file in your application. This package makes use the cognito user pool. Federation depends on the oath object. This application adds the socialProviders property to the oath object. Each item in the array will display a login button.
+1. The first step is to install the amplify vue application and configure authentication. You can configure federation from the amplify CLI or through the AWS console. 
+2. Next, run npm install amplify-vue-social-auth
+3. The next step is to update the aws-exports.js file in your application. This package makes use the cognito user pool. Federation depends on the oath object. This application adds the socialProviders property to the oath object. Each item in the array will display a login button.
 
 ```
 const awsmobile = {
@@ -28,8 +28,8 @@ const awsmobile = {
 
 export default awsmobile;
 ```
-# The redirects listed are for development. You will need to update them for production
-# Next, update src/router/index.js adding 
+4. The redirects listed are for development. You will need to update them for production
+5. Next, update src/router/index.js adding 
 ```
 import { SocialAuth,SocialAuthCallback} from 'amplify-vue-social-auth';
 ```
@@ -58,4 +58,4 @@ Replace the route for /auth and add a route for /callback
 ```
 
 A working example is available at
-https://github.com/jtpenny/amplify-vue-journal
+https://github.com/jtpenny/amplify-vue-journal and an example of the router file is available at https://github.com/jtpenny/amplify-vue-journal/commit/30990a583902c608569343cce769599ae9b0a692 
